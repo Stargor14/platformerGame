@@ -1,0 +1,5 @@
+platformNum,coinNum,enemyNum
+platformX,platformLength,platformLevel(1,2,3,etc)
+coinX,coinY
+enemyX,enemyY,leftbound,rightbound
+lastline: exitdoorX,Y

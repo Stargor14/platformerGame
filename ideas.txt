@@ -1,0 +1,60 @@
+create main file that executes everything
+figure out jpanel and jframe updating and png/jpeg drawing
+make game loop in main file
+functions for initializing window, then game loop function
+
+keep animations minimal to make this easier
+
+map object class, one map for every level, randomly genrated platform lengths, but similar amounts of platforms on each map, exit on random platform
+array of platform objects, contain position of platform, 
+
+gravity can be made easily, reduce y position if not on ground, do momentum system, moving left/right = momentum+=x;, position += momentum, momentum = 0 at stop, y momentum -= when in air.
+
+player object class, player can shoot pellet in direction they are moving to kill enemy, stores position, health, score
+coin object class, coin make sound when picked up, update score and disapear when picked up, if picked_up, not visible and wont add points
+enemy object class, 3 size of enemies, walk back and forth randomly along their platform
+random length platforms? will be created on launch, store platform edges 
+
+game_loop(){
+    checkPlayerInput()
+    applyInput()//move player, shoot pellet, make sure player not off map, etc
+    checkActions()//hit by enemy, on coin, on level exit
+    applyActions() change hp, change score, go onto next level, etc
+}
+
+
+step1: create screen X
+step2: create class files for seperate entities X
+step3: draw things onto screen at specific pixel locations X
+step4: move said things on a tick intervalmX
+step5: influence movemnt with keyboard input X
+step6: implement basic character movemnt rules X
+step7: implemnt boundaries and platforms X
+step 7.5(moved): make drawing of platforms X
+step 7.75: make platform spacing rules to make them proper X
+step 7.8: make platform landing functional X
+step8: create enemies that pace around on platforms 
+step8.5: make enemy jump on platform by checking proxmity to each platform
+step9: create coins X
+step10: make coins collectable X
+step11: make score display X
+step12: make character shoot X
+step13: make enemies deadable X
+step14: gain score for eliminating enemies X
+step15: make exit door X
+step16: make moving platforms
+step17: make entry sceen gamestate X
+step18: make win screen gamestate
+step19: add sound effects  X
+step20: add mutliple levels X
+step20.5: make proper sprites X
+step 20.75: make animations X
+step21: add cool obstacles (fire, water, lava, etc.)
+step22: add powerups (double jump, faster shooting, extra life, stronger shooting)
+
+Currently working on:
+add remaining levels
+and more complexity to levels
+
+
+<-----------------------------|
